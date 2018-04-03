@@ -1,7 +1,7 @@
 <template>
   <!-- template里只能有一个根节点 -->
   <div class="demo-page">
-    <text class="title">欢迎打开{{title}}</text>
+    <text class="title">1{{title}}</text>
     <!-- 点击跳转详情页 -->
     <input class="btn" type="button" value="跳转到详情页" onclick="routeDetail">
   </div>
@@ -39,6 +39,7 @@
     },
     routeDetail () {
       // 跳转到应用内的某个页面，router用法详见：文档->接口->页面路由
+      console.log(1)
       router.push ({
         uri: '/DemoDetail'
       })
